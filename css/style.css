@@ -11,8 +11,7 @@
 }
 
 :root {
-    --light-pink: #ffc0cb;
-    --bold-pink: #e84393;
+    --primary-color: #bda72a;
 }
 
 html {
@@ -32,11 +31,11 @@ section {
     color: #333;
     padding: 1rem;
     margin: 2rem 0;
-    background: #ff33990d;
+    background: rgba(108, 62, 32, 0.075);
 }
 
 .heading span {
-    color: var(--bold-pink);
+    color: var(--primary-color);
 }
 
 .btn {
@@ -51,7 +50,7 @@ section {
 }
 
 .btn:hover {
-    background: var(--bold-pink);
+    background: var(--primary-color);
 }
 
 header {
@@ -75,7 +74,7 @@ header .logo {
 }
 
 header .logo span {
-    color: var(--light-pink);
+    color: var(--primary-color);
 }
 
 header .navbar a {
@@ -85,7 +84,7 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-    color: var(--light-pink);
+    color: var(--primary-color)
 }
 
 header .icons a {
@@ -95,7 +94,7 @@ header .icons a {
 }
 
 header .icons a:hover {
-    color: var(--light-pink);
+    color: var(--primary-color);
 }
 
 header #toogler {
@@ -112,14 +111,14 @@ header .fa-bars {
     display: none;
 }
 
+/*--- home ----*/
 .home {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    background-image: url(../images/background-page.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: #ffc0cb;
+    background-color: #f3f3f3;
+    gap: 6rem;
 }
 
 .home .content {
@@ -132,10 +131,11 @@ header .fa-bars {
 }
 
 .home .content span {
-    font-size: 3.5rem;
-    color: var(--bold-pink);
+    font-size: 3rem;
+    color: var(--primary-color);
     padding: 1rem 0;
     line-height: 1.5;
+    text-transform: uppercase;
 }
 
 .home .content p {
@@ -143,6 +143,12 @@ header .fa-bars {
     color: #999;
     padding: 1rem 0;
     line-height: 1.5;
+}
+
+.home .image-home img {
+    width: 100%;
+    min-width: 400px;
+    max-width: 600px;
 }
 
 .about .row {
@@ -238,12 +244,12 @@ header .fa-bars {
 }
 
 .products .box-container .box {
-
     flex: 1 1 30rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
-    border: .1rem solid rgba(0, 0, 0, .1);
+    border: .1rem solid var(--primary-color);
     position: relative;
+    background-color: #ededed;
 }
 
 .products .box-container .box .discount {
@@ -252,8 +258,8 @@ header .fa-bars {
     left: 1rem;
     padding: .7rem 1rem;
     font-size: 2rem;
-    color: var(--bold-pink);
-    background: rgba(255, 51, 153, .05);
+    color: var(--primary-color);
+    background: rgba(108, 62, 32, 0.075);
     z-index: 1;
     border-radius: .5rem;
 }
@@ -290,7 +296,7 @@ header .fa-bars {
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background: var(--bold-pink);
+    background: var(--primary-color);
     color: #fff;
 }
 
@@ -316,12 +322,12 @@ header .fa-bars {
 
 .products .box-container .box .content .price {
     font-size: 2.5rem;
-    color: var(--bold-pink);
+    color: var(--primary-color);
     font-weight: bolder;
     padding-top: 1rem;
 }
 
-.products .box-container .box .content .price span{
+.products .box-container .box .content .price span {
     font-size: 1.5rem;
     color: #999;
     font-weight: lighter;
@@ -336,11 +342,11 @@ header .fa-bars {
 
 .review .box-container .box {
     flex: 1 1 30rem;
-    box-shadow:  0 .5rem 1.5rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
     padding: 3rem 2rem;
     position: relative;
-    border: .1rem solid rgba(0,0,0,.1);
+    border: .1rem solid rgba(0, 0, 0, .1);
 }
 
 .review .box-container .box .fa-quote-right {
@@ -352,7 +358,7 @@ header .fa-bars {
 }
 
 .review .box-container .box .star i {
-    color: var(--bold-pink);
+    color: var(--primary-color);
     font-size: 2rem;
 }
 
@@ -369,7 +375,7 @@ header .fa-bars {
     padding-top: 2rem;
 }
 
-.review .box-container .box .user img{
+.review .box-container .box .user img {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -397,7 +403,7 @@ header .fa-bars {
 .contact .row form {
     flex: 1 1 40rem;
     padding: 2rem 2.5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0.1);
     border: 1rem solid rgba(0, 0, 0, .1);
     background: #fff;
     border-radius: .5rem;
@@ -405,10 +411,13 @@ header .fa-bars {
 
 .contact .row .image {
     flex: 1 1 40rem;
+    display: flex;
+    justify-content: center;
 }
 
 .contact .row .image img {
-    width: 100%;
+    text-align: center;
+    width: 90%;
 }
 
 .contact .row form .box {
@@ -423,7 +432,7 @@ header .fa-bars {
 }
 
 .contact .row form .box:focus {
-    border-color: var(--bold-pink);
+    border-color: var(--primary-color);
 }
 
 .contact .row form textarea {
@@ -432,13 +441,13 @@ header .fa-bars {
 }
 
 footer {
-    padding: 2rem 9%;   
+    padding: 2rem 9%;
 }
 
 footer .box-container {
     display: flex;
     flex-wrap: wrap;
-   justify-content: space-between;
+    justify-content: space-between;
     gap: 1.5rem;
 }
 
@@ -460,7 +469,7 @@ footer .box-container .box a {
 }
 
 footer .box-container .box a:hover {
-    color: var(--bold-pink);
+    color: var(--primary-color);
     text-decoration: underline;
 }
 
@@ -479,18 +488,25 @@ footer .credit {
 }
 
 footer .credit span {
-    color: var(--bold-pink);
+    color: var(--primary-color);
 }
 
-
-
-
-
-
-
-
-
 /*media queries*/
+@media (max-width: 1024px) {
+
+    .home {
+        gap: 2rem
+    }
+
+    .home .content h3 {
+        font-size: 5rem;
+    }
+
+    .home .content span {
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width: 991px) {
 
     html {
@@ -504,10 +520,10 @@ footer .credit span {
     section {
         padding: 2rem;
     }
-
 }
 
 @media (max-width: 768px) {
+
     header .fa-bars {
         display: block;
     }
@@ -534,12 +550,25 @@ footer .credit span {
         display: block;
     }
 
+    .home {
+        gap: 0;
+        text-align: center;
+    }
+
+    .home .content {
+        max-width: 60rem;
+    }
+
     .home .content h3 {
         font-size: 5rem;
     }
 
     .home .content span {
         font-size: 2.5rem;
+    }
+
+    .home .image-home img {
+        display: none;
     }
 
     .icons-container .icons h3 {
