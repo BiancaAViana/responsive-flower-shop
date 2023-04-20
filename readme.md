@@ -6,3 +6,5 @@ Este é um projeto pessoal onde desenvolvo um site responsível para venda de J�
 - HTML 💹;
 - CSS 💹;
 - JAVASCRIPT 💹;
+
+Acesse: https://biancaaviana.github.io/website-Joalheria/
